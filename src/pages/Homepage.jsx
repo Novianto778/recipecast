@@ -9,6 +9,7 @@ import CategoriesSection from 'src/components/Categories/CategoriesSection';
 import Banner from 'src/components/Banner/Banner';
 import Newslater from 'src/components/Newslater/Newslater';
 import Footer from 'src/components/Footer/Footer';
+import BestSection from 'src/components/BestSection/BestSection';
 
 const Homepage = () => {
   return (
@@ -37,6 +38,7 @@ const Homepage = () => {
           imgStart
         />
         <CategoriesSection />
+        <BestSection />
         <Banner />
         <Newslater />
       </main>

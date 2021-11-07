@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 
   @media screen and (min-width: 486px) {
     font-size: 16px;
@@ -34,6 +34,8 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 .container {

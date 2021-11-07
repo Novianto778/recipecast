@@ -33,6 +33,7 @@ export const InfoImageWrapper = styled.div`
 export const InfoImage = styled.img`
   max-width: 400px;
   width: 100%;
+  height: auto;
 `;
 
 export const InfoHeading = styled.h2`

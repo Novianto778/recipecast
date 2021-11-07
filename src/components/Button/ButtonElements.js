@@ -16,7 +16,7 @@ export const Btn = styled.button`
 `;
 
 export const ButtonRounded = styled(Btn)`
-  border-radius: 20px;
+  border-radius: 40px;
 `;
 
 export const ButtonShaped = styled(Btn)`
