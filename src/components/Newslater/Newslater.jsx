@@ -1,4 +1,5 @@
 import React from 'react';
+import Input from '../Input/Input';
 import {
   NewslaterHeading,
   NewslaterInput,
@@ -13,10 +14,11 @@ const Newslater = () => {
       <NewslaterHeading>
         Join Us to Receive Weekly Popular Recipe
       </NewslaterHeading>
-      <NewslaterInputContainer>
+      {/* <NewslaterInputContainer>
         <NewslaterInput placeholder="Enter your email address" />
         <InputButton variant="rounded">Submit</InputButton>
-      </NewslaterInputContainer>
+      </NewslaterInputContainer> */}
+      <Input widht={60} variant="button" text="Submit" />
     </NewslaterSection>
   );
 };

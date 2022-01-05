@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import GlobalStyles from 'src/assets/GlobalStyles';
 import Homepage from 'src/pages/Homepage';
+import Categories from 'src/pages/Categories';
 
 function App() {
   return (
@@ -14,8 +15,11 @@ function App() {
       <GlobalStyles />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Homepage />
+          </Route>
+          <Route path="/categories">
+            <Categories />
           </Route>
         </Switch>
       </Router>

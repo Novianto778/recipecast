@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const CategoriesWrapper = styled.section`
   margin-top: 5rem;
@@ -80,4 +81,52 @@ export const CardText = styled.p`
   font-size: 1.5rem;
   text-transform: capitalize;
   font-weight: 500;
+`;
+
+// categories list
+export const ListContainer = styled.div`
+  display: none;
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+  grid-auto-rows: max-content;
+  max-width: 320px;
+  margin: 1rem 4rem 0 0;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+  }
+`;
+
+export const ListItem = styled.span`
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  border-radius: 70px;
+  width: max-content;
+  height: max-content;
+  font-weight: 500;
+`;
+
+export const CategoriesTop = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const CategoriesContent = styled.div`
+  display: flex;
+  margin-top: 2rem;
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
