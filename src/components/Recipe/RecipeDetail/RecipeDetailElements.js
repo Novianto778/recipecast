@@ -14,6 +14,10 @@ export const Wrapper = styled.div`
   padding-top: 2rem;
 `;
 
+export const RecipeLeftContainer = styled.div`
+  /* overflow: scroll; */
+`;
+
 export const ArrowIcon = styled(BsArrowLeft)`
   width: 32px;
   height: 32px;
@@ -29,7 +33,7 @@ export const LoveIcon = styled(BsSuitHeartFill)`
 export const RecipeSubtitle = styled.h4`
   font-size: 1.125rem;
   font-weight: 600;
-  color: #fff;
+  color: ${(props) => (props.white ? "#fff" : "#000")};
   margin-bottom: 0;
 `;
 
@@ -53,4 +57,18 @@ export const LoveCount = styled.p`
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
+`;
+
+export const InstructionContainer = styled.ul`
+  display: list-item;
+  padding-left: 20px;
+  overflow-y: scroll;
+  max-height: calc(100vh - ${(props) => props.height}px - 10px);
+`;
+
+export const InstructionList = styled.li`
+  list-style: circle;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 `;
