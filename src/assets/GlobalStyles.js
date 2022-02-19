@@ -68,6 +68,20 @@ ul {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5e8b1;
+    border-radius: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 2rem;

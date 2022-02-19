@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { BsArrowLeft } from "react-icons/bs";
-import { BsSuitHeartFill } from "react-icons/bs";
+import styled, { css } from "styled-components";
+import { BsArrowLeft, BsSuitHeartFill, BsFillPersonFill } from "react-icons/bs";
+import { MdTimer, MdSignalCellular1Bar } from "react-icons/md";
 
 export const Container = styled.div`
   display: grid;
@@ -35,6 +35,7 @@ export const RecipeSubtitle = styled.h4`
   font-weight: 600;
   color: ${(props) => (props.white ? "#fff" : "#000")};
   margin-bottom: 0;
+  margin-top: 0.5rem;
 `;
 
 export const RecipeTitle = styled.h4`
@@ -63,12 +64,51 @@ export const InstructionContainer = styled.ul`
   display: list-item;
   padding-left: 20px;
   overflow-y: scroll;
-  max-height: calc(100vh - ${(props) => props.height}px - 10px);
+  max-height: calc(100vh - ${(props) => props.height}px - 20px);
+  scrollbar-width: thin;
+  scrollbar-color: #6969dd #e0e0e0;
+  padding-right: 3rem;
 `;
 
 export const InstructionList = styled.li`
   list-style: circle;
   font-size: 0.875rem;
   margin-bottom: 1rem;
+  font-weight: 500;
+`;
+
+export const RecipeRightWrapper = styled.div`
+  height: calc(100vh - 4rem);
+`;
+
+export const RecipeRightContainer = styled.div`
+  padding: 1rem;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+`;
+
+const Icon = css`
+  width: 28px;
+  height: 28px;
+  color: var(--primary);
+  margin-right: 1rem;
+`;
+
+export const TimerIcon = styled(MdTimer)`
+  ${Icon}
+`;
+
+export const LevelIcon = styled(MdSignalCellular1Bar)`
+  ${Icon}
+`;
+
+export const ServingIcon = styled(BsFillPersonFill)`
+  ${Icon}
+`;
+
+export const IconText = styled.p`
+  font-size: 0.875rem;
   font-weight: 500;
 `;
