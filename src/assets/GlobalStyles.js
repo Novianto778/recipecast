@@ -31,6 +31,12 @@ body {
 
 }
 
+button {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 a {
   text-decoration: none;
   outline: none;

@@ -10,7 +10,10 @@ import {
   RecipeSubtitle,
   InstructionList,
   InstructionContainer,
+  RecipeMenu,
+  IconButton,
 } from "./RecipeDetailElements";
+import { BsCalendar, BsHeart } from "react-icons/bs";
 
 const RecipeRight = () => {
   const [height, setHeight] = useState();
@@ -35,7 +38,7 @@ const RecipeRight = () => {
           <IconText>2 Servings</IconText>
         </FlexContainer>
         <RecipeSubtitle>Ingredients</RecipeSubtitle>
-        <InstructionContainer ref={elRef} height={height + 40}>
+        <InstructionContainer ref={elRef} height={height + 120}>
           <InstructionList>
             3/4 cup (94g) all-purpose flour (spoon & leveled)
           </InstructionList>
@@ -54,6 +57,23 @@ const RecipeRight = () => {
             1/3 cup (80ml) vegetable or canola oil (or melted coconut oil)
           </InstructionList>
         </InstructionContainer>
+        <RecipeMenu>
+          <IconButton>
+            <BsCalendar />
+          </IconButton>
+          <IconButton>
+            <BsCalendar />
+          </IconButton>
+          <IconButton>
+            <BsHeart />
+          </IconButton>
+          <IconButton>
+            <BsCalendar />
+          </IconButton>
+          <IconButton>
+            <BsCalendar />
+          </IconButton>
+        </RecipeMenu>
       </RecipeRightContainer>
     </RecipeRightWrapper>
   );
