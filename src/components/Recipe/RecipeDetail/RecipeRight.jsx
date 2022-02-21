@@ -13,10 +13,17 @@ import {
   RecipeMenu,
   IconButton,
 } from "./RecipeDetailElements";
-import { BsCalendar, BsHeart } from "react-icons/bs";
+import {
+  BsCalendar,
+  BsHeart,
+  BsSuitHeartFill,
+  BsBookmark,
+  BsShareFill,
+} from "react-icons/bs";
+import { GoComment } from "react-icons/go";
 
 const RecipeRight = () => {
-  const [height, setHeight] = useState();
+  const [height, setHeight] = useState(0);
   const elRef = useRef();
   // const { offsetTop } = elRef.current;
   useEffect(() => {
@@ -62,16 +69,16 @@ const RecipeRight = () => {
             <BsCalendar />
           </IconButton>
           <IconButton>
-            <BsCalendar />
+            <GoComment />
           </IconButton>
           <IconButton>
-            <BsHeart />
+            <BsSuitHeartFill />
           </IconButton>
           <IconButton>
-            <BsCalendar />
+            <BsBookmark />
           </IconButton>
           <IconButton>
-            <BsCalendar />
+            <BsShareFill />
           </IconButton>
         </RecipeMenu>
       </RecipeRightContainer>

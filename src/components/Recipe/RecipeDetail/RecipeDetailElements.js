@@ -130,11 +130,15 @@ export const RecipeMenu = styled.div`
 `;
 
 export const IconButton = styled.button`
-  font-size: 1.25rem;
+  font-size: 1.325rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.1);
-    color: #ff1b1b;
+    color: #000;
+  }
+
+  svg {
+    vertical-align: middle;
   }
 `;

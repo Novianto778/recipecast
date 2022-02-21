@@ -12,7 +12,7 @@ import {
 } from "./RecipeDetailElements";
 
 const RecipeLeft = () => {
-  const [height, setHeight] = useState();
+  const [height, setHeight] = useState(0);
   const elRef = useRef();
   // const { offsetTop } = elRef.current;
   useEffect(() => {
